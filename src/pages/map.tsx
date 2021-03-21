@@ -35,7 +35,7 @@ export const getServerSideProps: GetServerSideProps = withIronSession(
   {
     cookieName: 'user',
     cookieOptions: {
-      secure: process.env.NODE_ENV === 'production'
+      secure: false
     },
     password: process.env.COOKIE_PASS
   }
